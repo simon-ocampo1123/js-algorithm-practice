@@ -67,7 +67,7 @@ function ejercicio4() {
   console.log(segundoNum)
 }
 
-ejercicio4()
+// ejercicio4()
 
 function ejercicio5() {
   const numeros = [3, 7, 2, 9, 4, 10, 6]
@@ -124,3 +124,25 @@ function ejercicio7() {
 }
 
 // ejercicio7()
+
+function ejercicio8() {
+let word = "javaScript";
+let letters = [];
+
+  for (let i = 0; i < word.length; i++) {
+  let existe = false;
+    for (let j = 0; j < letters.length; j++) {
+      if (word[i] === letters[j]) {
+        existe = true;
+        console.log("La letra", word[i], "ya existe.");
+        break;
+      }
+    }
+    if (existe === false) {
+      letters[letters.length] = word[i];
+    }
+  }
+  console.log(letters);
+}
+
+ejercicio8();
